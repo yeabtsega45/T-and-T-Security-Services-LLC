@@ -14,7 +14,7 @@ const MobileMenu = ({ navItems = items, onePage = false }) => {
     document.body.classList.toggle("locked");
     toggleMenu();
   };
-
+  console.log("menuStatus", menuStatus)
   return (
     <div className={`mobile-nav__wrapper${menuStatus ? " expanded" : ""}`}>
       <div
@@ -30,7 +30,7 @@ const MobileMenu = ({ navItems = items, onePage = false }) => {
         </span>
         <div className="logo-box">
           <Link href="/" aria-label="logo image">
-            <Image src={logo.src} width={155} alt="" />
+            <Image src={require(`@/images/logo/logo.png`).default.src} alt="Picture of the author" />
           </Link>
         </div>
         <div className="mobile-nav__container">
@@ -39,20 +39,20 @@ const MobileMenu = ({ navItems = items, onePage = false }) => {
         <ul className="mobile-nav__contact list-unstyled">
           <li>
             <i className="fa fa-envelope"></i>
-            <a href={`mailto:${email}`}>{email}</a>
+            <a href={`mailto:${"infor@ttsecurityservicesllc.com"}`}>{"info@ttsecurityservicesllc.com"}</a>
           </li>
           <li>
             <i className="fa fa-phone-alt"></i>
-            <a href={`tel:${phoneHref}`}>{phone}</a>
+            <a href={`tel:${"833-267-32875"}`}>{"833-267-3287"}</a>
           </li>
         </ul>
-        <div className="mobile-nav__top">
-          <div className="mobile-nav__social">
-            {socials.map(({ id, href, icon }) => (
-              <a key={id} href={href} className={icon}></a>
-            ))}
-          </div>
-        </div>
+        {/*<div className="mobile-nav__top">*/}
+        {/*  <div className="mobile-nav__social">*/}
+        {/*    {socials.map(({ id, href, icon }) => (*/}
+        {/*      <a key={id} href={href} className={icon}></a>*/}
+        {/*    ))}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </div>
     </div>
   );

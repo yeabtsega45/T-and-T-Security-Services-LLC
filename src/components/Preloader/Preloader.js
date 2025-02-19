@@ -1,4 +1,4 @@
-import image from "@/images/loader.png";
+import image from "@/images/logo/logo.png";
 import React from "react";
 import { Image } from "react-bootstrap";
 

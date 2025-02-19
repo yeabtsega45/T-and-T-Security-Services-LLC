@@ -56,8 +56,8 @@ const NavItem = ({ navItem = {}, mobile = false, onePage = false }) => {
 
   const handleToggleMenu = () => {
     if (mobile) {
-      toggleMenu(false);
       document.body.classList.remove("locked");
+      toggleMenu();
     }
   };
 
@@ -83,9 +83,10 @@ const NavItem = ({ navItem = {}, mobile = false, onePage = false }) => {
       className={`${subNavItems.length ? "dropdown" : ""}${
         current ? " current" : ""
       }`}
+      onClick={handleToggleMenu}
     >
       <Link
-        onClick={handleToggleMenu}
+//        onClick={handleToggleMenu}
         href={href}
         className={mobile && active ? "expanded" : ""}
       >

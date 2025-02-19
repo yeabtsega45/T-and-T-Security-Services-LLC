@@ -4,8 +4,72 @@ import image6 from "@/images/services/service-details-img-3.jpg";
 import image4 from "@/images/services/service-details-img-4.jpg";
 import image2 from "@/images/services/service-details-img-5.jpg";
 import image5 from "@/images/services/service-details-img-6.jpg";
+import partners1 from "@/images/services/partners_one.jpg";
+import partners2 from "@/images/services/partners_two.jpg";
+import partners3 from "@/images/services/partners_three.jpg";
 import { faqs } from "./fAQsPage";
 import { servicesSubNavItems } from "./headerData";
+
+export const partners = {
+  tagline: "Our Partners",
+  title: "Our Partners",
+  partnersList: [
+    {
+      id: 1,
+      title: "",
+      image: "partners_one.jpg",
+      icon: "",
+      new_icon: "",
+      href: "#",
+      text: ".",
+    },
+    {
+      id: 2,
+      title: "",
+      image: "partners_two.jpg",
+      icon: "",
+      new_icon: "",
+      href: "#",
+      text: ".",
+    },
+    {
+      id: 3,
+      title: "",
+      image: "partners_three.jpg",
+      icon: "",
+      new_icon: "",
+      href: "#",
+      text: ".",
+    },
+    {
+      id: 4,
+      title: "",
+      image: "partners_four.jpg",
+      icon: "",
+      new_icon: "",
+      href: "#",
+      text: ".",
+    },
+    {
+      id: 5,
+      title: "",
+      image: "partners_five.jpg",
+      icon: "",
+      new_icon: "",
+      href: "#",
+      text: ".",
+    },
+    {
+      id: 6,
+      title: "",
+      image: "partners_six.jpg",
+      icon: "",
+      new_icon: "",
+      href: "#",
+      text: ".",
+    },
+  ]
+}
 
 export const servicesOne = {
   tagline: "Our Services",

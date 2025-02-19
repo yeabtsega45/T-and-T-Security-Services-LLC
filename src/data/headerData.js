@@ -209,7 +209,7 @@ export const navItems = [
   {
     id: 2,
     name: "About",
-    href: "/",
+    href: "/about",
   },
   {
     id: 3,
@@ -219,7 +219,12 @@ export const navItems = [
   {
     id: 4,
     name: "Sector",
-    href: "/",
+    href: "/sector",
+  },
+  {
+    id: 6,
+    name: "Partners",
+    href: "/partners",
   },
   {
     id: 5,

@@ -1,9 +1,10 @@
-import { servicesOne } from "@/data/servicesSection";
+import { servicesOne, partners } from "@/data/servicesSection";
 import React from "react";
 import { Container } from "react-bootstrap";
 import SwiperCore, { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SingleServiceOne from "./SingleServiceOne";
+import { useRouter } from 'next/router'
 
 SwiperCore.use([Autoplay, Pagination]);
 
@@ -40,18 +41,26 @@ const options = {
 };
 
 const { services } = servicesOne;
+const { partnersList } = partners;
 
 const ServicesOneCarousel = () => {
+  const router = useRouter()
   return (
     <section className="services-one">
       <Container>
         <Swiper {...options} className="thm-swiper__slider service-carousel">
           <div className="swiper-wrapper">
-            {services.map((service) => (
+            { router.route !== "/partners" ? services.map((service) => (
               <SwiperSlide key={service.id}>
                 <SingleServiceOne service={service} />
               </SwiperSlide>
-            ))}
+            )) : 
+            partnersList.map((service) => (
+              <SwiperSlide key={service.id}>
+                <SingleServiceOne service={service} />
+              </SwiperSlide>
+            ))
+          }
           </div>
           <div
             className="swiper-pagination swiper-pagination-styled"

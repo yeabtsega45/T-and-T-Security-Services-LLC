@@ -25,39 +25,39 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="shortcut icon"
-            href="favicon.ico"
+            href="logo.png"
             id="fav-shortcut"
             type="image/x-icon"
           />
           <link
             rel="icon"
-            href="favicon.ico"
+            href="logo.png"
             id="fav-icon"
             type="image/x-icon"
           />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="apple-touch-icon.png"
+            href="logo.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="favicon-32x32.png"
+            href="logo.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="favicon-16x16.png"
+            href="logo.png"
           />
-          <link rel="icon" href="favicon.ico" />
+          <link rel="icon" href="logo.png" />
           <link rel="manifest" href="manifest.json" />
 
           <meta
             name="description"
-            content="Oslim NextJS Template For Business"
+            content="T & T Security Services LLC"
           />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />

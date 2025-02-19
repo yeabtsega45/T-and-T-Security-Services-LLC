@@ -29,11 +29,9 @@ const Layout = ({
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          {pageTitle} || T&T
-        </title>
+        <title>T & T Security Services LLC</title>
       </Head>
-      <Preloader loading={loading} />
+      {/*<Preloader loading={loading} />*/}
       <main
         id="wrapper"
         style={{ opacity: loading ? 0 : 1 }}

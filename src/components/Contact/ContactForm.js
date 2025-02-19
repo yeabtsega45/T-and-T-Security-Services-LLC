@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import ContactService from "../../services/ContactService";
+import {useMutation} from "@tanstack/react-query";
 
 const ContactForm = ({
   inputs = [],
@@ -17,7 +19,13 @@ const ContactForm = ({
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const sendMessageMutation =  useMutation({
+    mutationFn: ContactService.sendContactMessage
+  });
+
+  const onSubmit = (data) => {
+    sendMessageMutation.mutateAsync(data);
+  };
 
   return (
     <form
@@ -50,12 +58,12 @@ const ContactForm = ({
             <textarea
               name="message"
               placeholder="Write a Message"
-              {...register("message")}
+              {...register("body")}
             ></textarea>
           </div>
           <div className={btnBoxClassName}>
             <button type="submit" className={`thm-btn ${btnClassName}`}>
-              {btnText}
+              { sendMessageMutation.isPending ? "Loading..." : btnText}
             </button>
           </div>
         </Col>

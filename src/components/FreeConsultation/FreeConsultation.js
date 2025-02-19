@@ -21,16 +21,16 @@ const FreeConsultation = () => {
           <div className="free-consultation__right">
             <h4 className="free-consultation__contact-info">
               <a
-                href={`tel:${phoneHref}`}
+                href={`tel:833-267-3287`}
                 className="free-consultation__contact-number"
               >
-                {phone}
+                {"833-267-3287"}
               </a>
               <a
-                href={`mailto:${email}`}
+                href={`mailto:${"info@ttsecurityservicesllc.com"}`}
                 className="free-consultation__contact-email"
               >
-                {email}
+                {"info@ttsecurityservicesllc.com"}
               </a>
             </h4>
           </div>

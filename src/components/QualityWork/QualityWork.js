@@ -20,14 +20,11 @@ const QualityWork = () => {
           <Col xl={5} lg={5}>
             <div className="quality-work__left">
               <Title tagline={"About Us"} className="text-left" >
-                <TextSplit text={"Welcome to" } />
-                <br/>
-                <TextSplit text={"T & T Security"} />
-                <br/>
-                <TextSplit text={"Services LLC"} />
-                {/*<h1 style={{color: 'white', fontSize: '64px', fontWeight: 900}} > Welcome to</h1>*/}
-                {/*<h1 style={{color: 'white'}} > T & T Security</h1>*/}
-                {/*<h1 style={{color: 'white'}} > Services LLC</h1>*/}
+                <h2 style={{ color: 'white', fontSize: 52, fontWeight: 'bold'}}>Welcome to</h2>
+                {/*<br/>*/}
+                {/*<TextSplit text={"T & T Security"} />*/}
+                <h2 style={{ color: 'white', fontSize: 52, fontWeight: 'bold'}}>T & T Security</h2>
+                <h2 style={{ color: 'white', fontSize: 52, fontWeight: 'bold'}}>Services LLC</h2>
               </Title>
               {/*<div className="quality-work__tab-box tabs-box">*/}
               {/*  <ul className="tab-buttons clearfix list-unstyled">*/}
@@ -58,7 +55,7 @@ const QualityWork = () => {
                   <li key={id}>
                     <div className="icon">
                       {/*<span className={icon}></span>*/}
-                      <Image src={require(`@/images/logo/logo-white.svg`).default.src} alt="Picture of the author"  width={300} height={300}/>
+                      <Image src={require(`@/images/logo/logo-white.svg`).default.src} alt="Picture of the author"  width={100} height={100}/>
                     </div>
                     <div className="text">
                       {/*<h4>{title}</h4>*/}

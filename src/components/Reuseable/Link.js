@@ -30,11 +30,11 @@ const Link = ({
     as,
   };
   return (
-    <NextLink {...linkProps}>
-      <a href={href} {...props}>
-        {children}
-      </a>
-    </NextLink>
+    (<NextLink {...linkProps} href={href}>
+
+      {children}
+
+    </NextLink>)
   );
 };
 

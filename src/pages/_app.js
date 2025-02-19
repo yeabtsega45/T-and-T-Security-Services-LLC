@@ -15,12 +15,27 @@ import "tiny-slider/dist/tiny-slider.css";
 import "@/styles/style.css";
 import "@/styles/responsive.css";
 
-const MyApp = ({ Component, pageProps }) => {
-  return (
-    <ContextProvider>
-      <Component {...pageProps} />
-    </ContextProvider>
-  );
+import {
+    QueryClient,
+    QueryClientProvider,
+} from '@tanstack/react-query'
+
+
+import {ReactQueryDevtools} from '@tanstack/react-query-devtools'
+
+
+// Create a client
+const queryClient = new QueryClient()
+
+const MyApp = ({Component, pageProps}) => {
+    return (
+        <QueryClientProvider client={queryClient}>
+            <ContextProvider>
+                <Component {...pageProps} />
+            </ContextProvider>
+            <ReactQueryDevtools initialIsOpen={false}/>
+        </QueryClientProvider>
+    );
 };
 
 export default MyApp;

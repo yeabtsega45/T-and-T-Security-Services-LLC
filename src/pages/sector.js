@@ -6,9 +6,9 @@ import React from "react";
 
 const Sector = () => {
   return (
-    <Layout pageTitle="Cases" footerClassName="site-footer-three">
+    <Layout pageTitle="Sectors" footerClassName="site-footer-three">
       <Header />
-      <PageHeader page="Cases" title="Our Cases" />
+      <PageHeader page="Sectors" title="Our Sectors" />
       <CasesPage />
     </Layout>
   );

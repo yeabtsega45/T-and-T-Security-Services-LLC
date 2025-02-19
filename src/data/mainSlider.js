@@ -9,13 +9,13 @@ export const mainSlider = [
   },
   {
     id: 2,
-    bg: "slider.jpg",
+    bg: "slider_1.jpg",
     title: "Award \n winning \n consulting",
     href: "/about",
   },
   {
     id: 3,
-    bg: "slider.jpg",
+    bg: "slider_2.jpg",
     title: "Award \n winning \n consulting",
     href: "/about",
   },

@@ -2,7 +2,7 @@ import bg from "@/images/shapes/contact-one-shape.png";
 
 export const inputs = [
   {
-    name: "name",
+    name: "full_name",
     type: "text",
     placeholder: "Full name",
     required: true,
@@ -20,7 +20,7 @@ export const inputs = [
     required: false,
   },
   {
-    name: "subject",
+    name: "title",
     type: "text",
     placeholder: "Subject",
     required: false,

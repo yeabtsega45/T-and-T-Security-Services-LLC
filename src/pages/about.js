@@ -10,6 +10,7 @@ import TeamOne from "@/components/TeamSection/TeamOne";
 import TestimonialOne from "@/components/TestimonialSection/TestimonialOne";
 import WorkTogetherTwo from "@/components/WorkTogether/WorkTogetherTwo";
 import React from "react";
+import WorkTogether from "@/components/WorkTogether/WorkTogether";
 
 const About = () => {
   return (
@@ -18,11 +19,12 @@ const About = () => {
       <PageHeader page="About" title="About us" />
       <WorkTogetherTwo />
       <FreeConsultation />
-      <QualityWork />
-      <OurMissionTwo className="our-mission-three" shape={1} />
-      <TeamOne />
-      <TestimonialOne className="testimonial-two" />
-      <BrandOne />
+      <WorkTogether />
+      {/*<QualityWork />*/}
+      {/*<OurMissionTwo className="our-mission-three" shape={1} />*/}
+      {/*<TeamOne />*/}
+      {/*<TestimonialOne className="testimonial-two" />*/}
+      {/*<BrandOne />*/}
       <CtaOne />
     </Layout>
   );

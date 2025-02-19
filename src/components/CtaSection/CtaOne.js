@@ -8,7 +8,9 @@ const { title, href } = ctaOne;
 
 const CtaOne = ({ className = "" }) => {
   return (
-    <section className={`cta-one ${className}`}>
+    <section className={`cta-one ${className}`}
+//      style={{'marginTop': 20}}
+      >
       <Container>
         <Row>
           <Col xl={12}>
@@ -19,8 +21,10 @@ const CtaOne = ({ className = "" }) => {
                 <h3 className="cta-one__title">
                   <TextSplit text={"T & T Security Services LLC"} />
                 </h3>
-                <Link href={href} className="thm-btn cta-one__btn">
-                  Discover More
+                <Link href={"/about"} className="thm-btn cta-one__btn">
+                  <p style={{color: 'white'}}>
+                    Discover More
+                    </p>
                 </Link>
               </div>
             </div>
